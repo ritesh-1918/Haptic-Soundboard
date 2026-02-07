@@ -1,50 +1,127 @@
-# Welcome to your Expo app 👋
+# 🎛️ Haptic Soundboard
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A premium **Haptic Drum Machine** built with React Native & Expo. Features a cyberpunk glassmorphism UI, polyphonic audio, and satisfying haptic feedback.
 
-## Get started
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+| Feature | Description |
+|---------|-------------|
+| 🎨 **Cyberpunk UI** | Dark gradient background with glassmorphism pads |
+| 🥁 **6 Drum Pads** | Kick, Snare, Hi-Hat, Clap, Bass, Vox |
+| 📳 **Haptic Feedback** | Heavy impact vibration on every tap |
+| 🔊 **Polyphonic Audio** | Sounds overlap naturally (no cutoff) |
+| ⚡ **Smooth Animations** | 60fps scale + border flash using Reanimated |
+| 🚀 **Boot Sequence** | Premium "System Initializing" loading screen |
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠️ Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Framework:** React Native (Expo SDK 54)
+- **Animation:** `react-native-reanimated`
+- **Audio:** `expo-av`
+- **Haptics:** `expo-haptics`
+- **Styling:** `expo-linear-gradient` + StyleSheet
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🚀 Quick Start
 
-When you're ready, run:
+### Prerequisites
+- Node.js 18+
+- Expo Go app on your phone ([iOS](https://apps.apple.com/app/expo-go/id982107779) / [Android](https://play.google.com/store/apps/details?id=host.exp.exponent))
+
+### Installation
 
 ```bash
-npm run reset-project
+# Clone the repository
+git clone git@github.com:ritesh-1918/Haptic-Soundboard.git
+cd Haptic-Soundboard
+
+# Install dependencies
+npm install
+
+# Start the development server
+npx expo start -c
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Running on Device
+1. Scan the QR code with **Expo Go** (Android) or **Camera** (iOS)
+2. Wait for the bundle to load
+3. Start drumming! 🥁
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📁 Project Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+haptic-soundboard/
+├── app/
+│   └── (tabs)/
+│       └── index.tsx    # Main soundboard screen
+├── assets/
+│   └── sounds/          # Local WAV audio files
+│       ├── kick.wav
+│       ├── snare.wav
+│       ├── hihat.wav
+│       ├── clap.wav
+│       ├── bass.wav
+│       └── vox.wav
+└── package.json
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🎨 Sound Kit
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+| Pad | Color | Sound |
+|-----|-------|-------|
+| KICK | `#F72585` | Deep bass drum |
+| SNARE | `#4CC9F0` | Crisp snare hit |
+| HI-HAT | `#F72585` | Closed hi-hat |
+| CLAP | `#4361EE` | Hand clap |
+| BASS | `#7209B7` | Sub bass boom |
+| VOX | `#3A0CA3` | Tink effect |
+
+---
+
+## 📱 Building for Production
+
+### Generate APK (Android)
+```bash
+npx eas build --platform android --profile preview
+```
+
+### Generate IPA (iOS)
+```bash
+npx eas build --platform ios --profile preview
+```
+
+> Note: You'll need an [Expo account](https://expo.dev/) and EAS CLI configured.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Add more sound packs
+- Improve animations
+- Add recording/playback features
+
+---
+
+## 📄 License
+
+MIT © [Ritesh](https://github.com/ritesh-1918)
+
+---
+
+<p align="center">
+  Made with ❤️ using React Native & Expo
+</p>
