@@ -6,6 +6,14 @@ A premium **Haptic Drum Machine** built with React Native & Expo. Features a cyb
 ![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
+## 📥 Download
+
+| Platform | Link |
+|----------|------|
+| 🌐 **Web App** | [haptic-soundboard-tau.vercel.app](https://haptic-soundboard-tau.vercel.app) |
+| 📱 **Android APK** | [Download from Expo](https://expo.dev/accounts/ritesh1918/projects/haptic-soundboard/builds/8635f094-ca24-4d77-8779-84ed58be42f5) |
+| 📲 **Expo Go** | Scan QR code after `npx expo start` |
+
 ---
 
 ## ✨ Features
